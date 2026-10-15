@@ -38,7 +38,7 @@ class _CounterScreenState extends State<CounterScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: _decrement,
+                  onPressed: _count > 0 ? _decrement : null,
                   child: const Icon(Icons.remove),
                 ),
                 const SizedBox(width: 24),
